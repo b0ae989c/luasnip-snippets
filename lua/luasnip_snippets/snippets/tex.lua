@@ -52,10 +52,29 @@ local s_eqn = s(
   )
 )
 
+local s_subeqn = s(
+  {
+    trig = 'subeqn',
+    name = 'subequations',
+  },
+  fmt(
+    [[
+    \begin{subequations}
+    	\begin{align}
+    		<1>
+    	\end{align}
+    \end{subequations}
+    ]],
+    { i(1, '') },
+    { delimiters = '<>' }
+  )
+)
+
 local snippets = {
   s_begin,
   s_ali,
   s_eqn,
+  s_subeqn,
 }
 
 local autosnippets = {}
