@@ -1,3 +1,61 @@
+local s_dollar = s(
+  {
+    trig = '$',
+    name = '\\( … \\)',
+  },
+  fmt(
+    [[
+    \( {1} \)
+    ]],
+    { i(1, '') }
+  )
+)
+
+local s_paren = s(
+  {
+    trig = '()',
+    name = '( … )',
+  },
+  fmt(
+    [[
+    {\left( <1> \right)}
+    ]],
+    { i(1, '') },
+    { delimiters = '<>' }
+  )
+)
+
+local s_bracket = s(
+  {
+    trig = '[]',
+    name = '[ … ]',
+  },
+  fmt(
+    [[
+    {\left[ <1> \right]}
+    ]],
+    { i(1, '') },
+    { delimiters = '<>' }
+  )
+)
+
+local s_frac = s(
+  {
+    trig = 'frac',
+    name = 'fraction',
+  },
+  fmt(
+    [[
+    \frac{<1>}{<2>}
+    ]],
+    {
+      i(1, ''),
+      i(2, ''),
+    },
+    { delimiters = '<>' }
+  )
+)
+
 local s_begin = s(
   {
     trig = 'beg',
@@ -87,6 +145,10 @@ local s_bmat = s(
 )
 
 local snippets = {
+  s_dollar,
+  s_paren,
+  s_bracket,
+  s_frac,
   s_begin,
   s_ali,
   s_eqn,
