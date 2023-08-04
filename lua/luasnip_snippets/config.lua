@@ -1,27 +1,25 @@
 local M = {}
 
 M.default = {
-  cpp = {
-    main = true,
-  },
-  tex = {
-    core = true,
-    equation = true,
-    inline = true,
-    matrix = true,
-  },
+	cpp = {
+		main = true,
+	},
+	tex = {
+		core = true,
+		equation = true,
+		inline = true,
+		matrix = true,
+	},
 }
 
 M.option = {}
 
 function M.setup(option)
-  for ft, v in pairs(option) do
-    if v == true then
-      option[ft] = M.default[ft]
-    end
-  end
+	for ft, v in pairs(option) do
+		if v == true then option[ft] = M.default[ft] end
+	end
 
-  M.option = vim.tbl_deep_extend('force', M.default, option or {})
+	M.option = vim.tbl_deep_extend('force', M.default, option or {})
 end
 
 return M
