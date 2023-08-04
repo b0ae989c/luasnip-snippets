@@ -16,12 +16,11 @@ local s_paren = s(
     trig = '()',
     name = '( … )',
   },
-  fmt(
+  fmta(
     [[
     {\left( <1> \right)}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -30,12 +29,11 @@ local s_bracket = s(
     trig = '[]',
     name = '[ … ]',
   },
-  fmt(
+  fmta(
     [[
     {\left[ <1> \right]}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -44,12 +42,11 @@ local s_angle_bracket = s(
     trig = '<>',
     name = '\\langle … \\rangle',
   },
-  fmt(
+  fmta(
     [[
     {\left\langle <1> \right\rangle}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -58,12 +55,11 @@ local s_curly_bracket = s(
     trig = '{}',
     name = '\\{ … \\}',
   },
-  fmt(
+  fmta(
     [[
     {\left\{ <1> \right\}}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -72,12 +68,11 @@ local s_bar = s(
     trig = '||',
     name = '| … |',
   },
-  fmt(
+  fmta(
     [[
     {\left| <1> \right|}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -86,12 +81,11 @@ local s_norm = s(
     trig = 'norm',
     name = '\\| … \\|',
   },
-  fmt(
+  fmta(
     [[
     {\left\| <1> \right\|}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -100,15 +94,14 @@ local s_frac = s(
     trig = 'frac',
     name = 'fraction',
   },
-  fmt(
+  fmta(
     [[
-    \frac{<1>}{<2>}
+    {\frac{<1>}{<2>}}
     ]],
     {
       i(1, ''),
       i(2, ''),
-    },
-    { delimiters = '<>' }
+    }
   )
 )
 
@@ -117,7 +110,7 @@ local s_begin = s(
     trig = 'beg',
     name = 'begin … end',
   },
-  fmt(
+  fmta(
     [[
     \begin{<1>}
     	<2>
@@ -127,10 +120,7 @@ local s_begin = s(
       i(1, ''),
       i(2, ''),
     },
-    {
-      delimiters = '<>',
-      repeat_duplicates = true,
-    }
+    { repeat_duplicates = true }
   )
 )
 
@@ -139,14 +129,13 @@ local s_ali = s(
     trig = 'ali',
     name = 'align',
   },
-  fmt(
+  fmta(
     [[
     \begin{aligned}
     	<1>
     \end{aligned}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -155,14 +144,13 @@ local s_eqn = s(
     trig = 'eqn',
     name = 'equation',
   },
-  fmt(
+  fmta(
     [[
     \begin{equation}
     	<1>
     \end{equation}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -171,7 +159,7 @@ local s_subeqn = s(
     trig = 'subeqn',
     name = 'subequations',
   },
-  fmt(
+  fmta(
     [[
     \begin{subequations}
     	\begin{align}
@@ -179,8 +167,7 @@ local s_subeqn = s(
     	\end{align}
     \end{subequations}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
@@ -189,14 +176,13 @@ local s_bmat = s(
     trig = 'bmat',
     name = 'bNiceMatrix',
   },
-  fmt(
+  fmta(
     [[
     \begin{bNiceMatrix}
     	<1>
     \end{bNiceMatrix}
     ]],
-    { i(1, '') },
-    { delimiters = '<>' }
+    { i(1, '') }
   )
 )
 
