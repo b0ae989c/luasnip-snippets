@@ -70,11 +70,28 @@ local s_subeqn = s(
   )
 )
 
+local s_bmat = s(
+  {
+    trig = 'bmat',
+    name = 'bNiceMatrix',
+  },
+  fmt(
+    [[
+    \begin{bNiceMatrix}
+    	<1>
+    \end{bNiceMatrix}
+    ]],
+    { i(1, '') },
+    { delimiters = '<>' }
+  )
+)
+
 local snippets = {
   s_begin,
   s_ali,
   s_eqn,
   s_subeqn,
+  s_bmat,
 }
 
 local autosnippets = {}
