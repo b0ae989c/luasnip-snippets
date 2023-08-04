@@ -39,6 +39,62 @@ local s_bracket = s(
   )
 )
 
+local s_angle_bracket = s(
+  {
+    trig = '<>',
+    name = '\\langle … \\rangle',
+  },
+  fmt(
+    [[
+    {\left\langle <1> \right\rangle}
+    ]],
+    { i(1, '') },
+    { delimiters = '<>' }
+  )
+)
+
+local s_curly_bracket = s(
+  {
+    trig = '{}',
+    name = '\\{ … \\}',
+  },
+  fmt(
+    [[
+    {\left\{ <1> \right\}}
+    ]],
+    { i(1, '') },
+    { delimiters = '<>' }
+  )
+)
+
+local s_bar = s(
+  {
+    trig = '||',
+    name = '| … |',
+  },
+  fmt(
+    [[
+    {\left| <1> \right|}
+    ]],
+    { i(1, '') },
+    { delimiters = '<>' }
+  )
+)
+
+local s_norm = s(
+  {
+    trig = 'norm',
+    name = '\\| … \\|',
+  },
+  fmt(
+    [[
+    {\left\| <1> \right\|}
+    ]],
+    { i(1, '') },
+    { delimiters = '<>' }
+  )
+)
+
 local s_frac = s(
   {
     trig = 'frac',
@@ -148,6 +204,10 @@ local snippets = {
   s_dollar,
   s_paren,
   s_bracket,
+  s_angle_bracket,
+  s_curly_bracket,
+  s_bar,
+  s_norm,
   s_frac,
   s_begin,
   s_ali,
