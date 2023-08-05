@@ -1,9 +1,6 @@
 local snippets = {
 	s(
-		{
-			trig = 'nmat',
-			name = 'NiceMatrix',
-		},
+		{ dscr = '', name = 'NiceMatrix', trig = 'nmat' },
 		fmta(
 			[[
 			\begin{NiceMatrix}
@@ -14,10 +11,7 @@ local snippets = {
 		)
 	),
 	s(
-		{
-			trig = 'bnmat',
-			name = 'bNiceMatrix',
-		},
+		{ dscr = '', name = 'bNiceMatrix', trig = 'bnmat' },
 		fmta(
 			[[
 			\begin{bNiceMatrix}
@@ -28,10 +22,7 @@ local snippets = {
 		)
 	),
 	s(
-		{
-			trig = 'pnmat',
-			name = 'pNiceMatrix',
-		},
+		{ dscr = '', name = 'pNiceMatrix', trig = 'pnmat' },
 		fmta(
 			[[
 			\begin{pNiceMatrix}
@@ -42,10 +33,7 @@ local snippets = {
 		)
 	),
 	s(
-		{
-			trig = 'vnmat',
-			name = 'vNiceMatrix',
-		},
+		{ dscr = '', name = 'vNiceMatrix', trig = 'vnmat' },
 		fmta(
 			[[
 			\begin{vNiceMatrix}
@@ -56,10 +44,7 @@ local snippets = {
 		)
 	),
 	s(
-		{
-			trig = 'Bnmat',
-			name = 'BNiceMatrix',
-		},
+		{ dscr = '', name = 'BNiceMatrix', trig = 'Bnmat' },
 		fmta(
 			[[
 			\begin{BNiceMatrix}
@@ -70,10 +55,7 @@ local snippets = {
 		)
 	),
 	s(
-		{
-			trig = 'Vnmat',
-			name = 'VNiceMatrix',
-		},
+		{ dscr = '', name = 'VNiceMatrix', trig = 'Vnmat' },
 		fmta(
 			[[
 			\begin{VNiceMatrix}

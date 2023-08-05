@@ -1,45 +1,36 @@
 local snippets = {
 	s(
-		{
-			trig = 'eqn',
-			name = 'equation',
-		},
+		{ dscr = '', name = 'equation', trig = 'eqn' },
 		fmta(
 			[[
-		\begin{equation}
-			<1>
-		\end{equation}
-		]],
-			{ i(1, '') }
-		)
-	),
-	s(
-		{
-			trig = 'subeqn',
-			name = 'subequations',
-		},
-		fmta(
-			[[
-		\begin{subequations}
-			\begin{align}
+			\begin{equation}
 				<1>
-			\end{align}
-		\end{subequations}
-		]],
+			\end{equation}
+			]],
 			{ i(1, '') }
 		)
 	),
 	s(
-		{
-			trig = 'ali',
-			name = 'align',
-		},
+		{ dscr = '', name = 'subequations', trig = 'subeqn' },
 		fmta(
 			[[
-		\begin{aligned}
-			<1>
-		\end{aligned}
-		]],
+			\begin{subequations}
+				\begin{align}
+					<1>
+				\end{align}
+			\end{subequations}
+			]],
+			{ i(1, '') }
+		)
+	),
+	s(
+		{ dscr = '', name = 'align', trig = 'ali' },
+		fmta(
+			[[
+			\begin{aligned}
+				<1>
+			\end{aligned}
+			]],
 			{ i(1, '') }
 		)
 	),

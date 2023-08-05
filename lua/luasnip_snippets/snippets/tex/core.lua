@@ -1,34 +1,17 @@
 local snippets = {
 	s(
-		{
-			trig = 'use',
-			name = 'usepackage',
-		},
-		fmta(
-			[[
-			\usepackage[<1>]{<2>}
-			]],
-			{
-				i(1, ''),
-				i(2, ''),
-			}
-		)
+		{ dscr = '', name = 'usepackage', trig = 'use' },
+		fmta([[\usepackage[<1>]{<2>}]], { i(1, ''), i(2, '') })
 	),
 	s(
-		{
-			trig = 'beg',
-			name = 'begin … end',
-		},
+		{ dscr = '', name = 'begin … end', trig = 'beg' },
 		fmta(
 			[[
 			\begin{<1>}
 				<2>
 			\end{<1>}
 			]],
-			{
-				i(1, ''),
-				i(2, ''),
-			},
+			{ i(1, ''), i(2, '') },
 			{ repeat_duplicates = true }
 		)
 	),
