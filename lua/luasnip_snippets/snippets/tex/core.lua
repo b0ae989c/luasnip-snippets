@@ -1,10 +1,15 @@
 local snippets = {
+	s({
+		trig = 'use',
+		name = 'usepackage',
+		dscr = '',
+	}, fmta([[\usepackage[<1>]{<2>}]], { i(1, ''), i(2, '') })),
 	s(
-		{ dscr = '', name = 'usepackage', trig = 'use' },
-		fmta([[\usepackage[<1>]{<2>}]], { i(1, ''), i(2, '') })
-	),
-	s(
-		{ dscr = '', name = 'begin … end', trig = 'beg' },
+		{
+			trig = 'beg',
+			name = 'begin … end',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{<1>}

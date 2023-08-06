@@ -1,6 +1,10 @@
 local snippets = {
 	s(
-		{ dscr = '', name = 'itemize', trig = 'list' },
+		{
+			trig = 'list',
+			name = 'itemize',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{itemize}
@@ -10,10 +14,11 @@ local snippets = {
 			{ i(1, '') }
 		)
 	),
-	s(
-		{ dscr = '', name = 'item', trig = 'i' },
-		fmta([[\item <1>]], { i(1, '') })
-	),
+	s({
+		trig = 'i',
+		name = 'item',
+		dscr = '',
+	}, fmta([[\item <1>]], { i(1, '') })),
 }
 
 local autosnippets = {}

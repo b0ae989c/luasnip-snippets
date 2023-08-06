@@ -1,36 +1,44 @@
 local snippets = {
-	s(
-		{ dscr = '', name = '\\( … \\)', trig = '$' },
-		fmt([[\( {1} \)]], { i(1, '') })
-	),
-	s(
-		{ dscr = '', name = '( … )', trig = '()' },
-		fmta([[{\left( <1> \right)}]], { i(1, '') })
-	),
-	s(
-		{ dscr = '', name = '[ … ]', trig = '[]' },
-		fmta([[{\left[ <1> \right]}]], { i(1, '') })
-	),
-	s(
-		{ dscr = '', name = '\\langle … \\rangle', trig = '<>' },
-		fmta([[{\left\langle <1> \right\rangle}]], { i(1, '') })
-	),
-	s(
-		{ dscr = '', name = '\\{ … \\}', trig = '{}' },
-		fmta([[{\left\{ <1> \right\}}]], { i(1, '') })
-	),
-	s(
-		{ dscr = '', name = '| … |', trig = '||' },
-		fmta([[{\left| <1> \right|}]], { i(1, '') })
-	),
-	s(
-		{ dscr = '', name = '\\| … \\|', trig = 'norm' },
-		fmta([[{\left\| <1> \right\|}]], { i(1, '') })
-	),
-	s(
-		{ dscr = '', name = 'fraction', trig = 'frac' },
-		fmta([[{\frac{<1>}{<2>}}]], { i(1, ''), i(2, '') })
-	),
+	s({
+		trig = '$',
+		name = '\\( … \\)',
+		dscr = '',
+	}, fmt([[\( {1} \)]], { i(1, '') })),
+	s({
+		trig = '()',
+		name = '( … )',
+		dscr = '',
+	}, fmta([[{\left( <1> \right)}]], { i(1, '') })),
+	s({
+		trig = '[]',
+		name = '[ … ]',
+		dscr = '',
+	}, fmta([[{\left[ <1> \right]}]], { i(1, '') })),
+	s({
+		trig = '<>',
+		name = '\\langle … \\rangle',
+		dscr = '',
+	}, fmta([[{\left\langle <1> \right\rangle}]], { i(1, '') })),
+	s({
+		trig = '{}',
+		name = '\\{ … \\}',
+		dscr = '',
+	}, fmta([[{\left\{ <1> \right\}}]], { i(1, '') })),
+	s({
+		trig = '||',
+		name = '| … |',
+		dscr = '',
+	}, fmta([[{\left| <1> \right|}]], { i(1, '') })),
+	s({
+		trig = 'norm',
+		name = '\\| … \\|',
+		dscr = '',
+	}, fmta([[{\left\| <1> \right\|}]], { i(1, '') })),
+	s({
+		trig = 'frac',
+		name = 'fraction',
+		dscr = '',
+	}, fmta([[{\frac{<1>}{<2>}}]], { i(1, ''), i(2, '') })),
 }
 
 local autosnippets = {}
