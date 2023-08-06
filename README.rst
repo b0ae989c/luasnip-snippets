@@ -4,9 +4,10 @@ luasnip-snippets
 Configuration
 -------------
 
+With ``lazy.nvim``:
+
 .. code-block:: lua
 
-   -- with lazy.nvim
    {
      'L3MON4D3/LuaSnip',
      event = 'BufReadPre',
@@ -19,7 +20,7 @@ Configuration
      end,
    }
 
-Remove some collections of snippets:
+Remove some snippet collections:
 
 .. code-block:: lua
 
