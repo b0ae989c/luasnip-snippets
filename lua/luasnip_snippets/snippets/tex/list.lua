@@ -16,6 +16,21 @@ local snippets = {
 			{ i(1, '') }
 		)
 	),
+	s(
+		{
+			trig = 'enum',
+			name = 'enumerate',
+			dscr = '',
+		},
+		fmta(
+			[[
+			\begin{enumerate}
+				\item <1>
+			\end{enumerate}
+			]],
+			{ i(1, '') }
+		)
+	),
 	s({
 		trig = 'i',
 		name = 'item',
