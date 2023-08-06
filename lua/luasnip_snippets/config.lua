@@ -8,6 +8,7 @@ M.default = {
 		core = true,
 		equation = true,
 		inline = true,
+		list = true,
 		matrix = true,
 	},
 }
