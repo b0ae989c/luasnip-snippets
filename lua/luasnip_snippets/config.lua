@@ -16,8 +16,8 @@ M.default = {
 M.option = {}
 
 function M.setup(option)
-	for ft, v in pairs(option) do
-		if v == true then option[ft] = M.default[ft] end
+	for ft, collection in pairs(option) do
+		if collection == true then option[ft] = M.default[ft] end
 	end
 
 	M.option = vim.tbl_deep_extend('force', M.default, option or {})
