@@ -2,11 +2,7 @@ local util = require('luasnip_snippets.util')
 
 local snippets = {
 	s(
-		{
-			trig = 'list',
-			name = 'itemize',
-			dscr = '',
-		},
+		{ trig = 'list', name = 'itemize', dscr = '' },
 		fmta(
 			[[
 			\begin{itemize}
@@ -17,11 +13,7 @@ local snippets = {
 		)
 	),
 	s(
-		{
-			trig = 'enum',
-			name = 'enumerate',
-			dscr = '',
-		},
+		{ trig = 'enum', name = 'enumerate', dscr = '' },
 		fmta(
 			[[
 			\begin{enumerate}
@@ -31,17 +23,20 @@ local snippets = {
 			{ i(1, '') }
 		)
 	),
-	s({
-		trig = 'i',
-		name = 'item',
-		dscr = '',
-		condition = function()
-			return util.check_tex_environment({ 'itemize', 'enumerate' })
-		end,
-		show_condition = function()
-			return util.check_tex_environment({ 'itemize', 'enumerate' })
-		end,
-	}, fmta([[\item <1>]], { i(1, '') })),
+	s(
+		{
+			trig = 'i',
+			name = 'item',
+			dscr = '',
+			condition = function()
+				return util.check_tex_environment({ 'itemize', 'enumerate' })
+			end,
+			show_condition = function()
+				return util.check_tex_environment({ 'itemize', 'enumerate' })
+			end,
+		},
+		fmta([[\item <1>]], { i(1, '') })
+	),
 }
 
 local autosnippets = {}

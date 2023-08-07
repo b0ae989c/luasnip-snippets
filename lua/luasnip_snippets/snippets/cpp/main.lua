@@ -1,10 +1,6 @@
 local snippets = {
 	s(
-		{
-			trig = 'main',
-			name = 'main',
-			dscr = '',
-		},
+		{ trig = 'main', name = 'main', dscr = '' },
 		fmta(
 			[[
 			int
