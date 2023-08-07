@@ -17,6 +17,25 @@ local snippets = {
 			{ i(1, ''), i(2, ''), i(3, ''), i(4, ''), i(5, '') }
 		)
 	),
+	s(
+		{
+			trig = 'subfig',
+			name = 'subfigure',
+			dscr = '',
+		},
+		fmta(
+			[[
+			\begin{subfigure}[b]{<1>\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{<2>}
+				\caption{<3>}
+				\label{<4>}
+			\end{subfigure}
+			\hfill
+			]],
+			{ i(1, ''), i(2, ''), i(3, ''), i(4, '') }
+		)
+	),
 }
 
 local autosnippets = {}
