@@ -7,6 +7,7 @@ M.default = {
 	tex = {
 		core = true,
 		equation = true,
+		figure = true,
 		inline = true,
 		list = true,
 		matrix = true,
