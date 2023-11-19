@@ -24,19 +24,18 @@ local snippets = {
 		)
 	),
 	s(
-		{
-			trig = 'i',
-			name = 'item',
-			dscr = '',
-			condition = function()
-				return util.check_tex_environment({ 'itemize', 'enumerate' })
-			end,
-			show_condition = function()
-				return util.check_tex_environment({ 'itemize', 'enumerate' })
-			end,
-		},
-		fmta([[\item <1>]], { i(1, '') })
 	),
+	s({
+		trig = 'i',
+		name = 'item',
+		dscr = '',
+		condition = function()
+			return util.check_tex_environment({ 'itemize', 'enumerate' })
+		end,
+		show_condition = function()
+			return util.check_tex_environment({ 'itemize', 'enumerate' })
+		end,
+	}, fmta([[\item <1>]], { i(1, '') })),
 }
 
 local autosnippets = {}
