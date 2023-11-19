@@ -21,3 +21,4 @@ if require('luasnip_snippets.config').option.cpp.main then
 else
 	return {}, {}
 end
+-- vi: set noexpandtab:

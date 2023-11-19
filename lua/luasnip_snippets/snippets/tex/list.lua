@@ -46,3 +46,4 @@ if require('luasnip_snippets.config').option.tex.list then
 else
 	return {}, {}
 end
+-- vi: set noexpandtab:

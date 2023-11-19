@@ -25,3 +25,4 @@ function M.setup(option)
 end
 
 return M
+-- vi: set noexpandtab:

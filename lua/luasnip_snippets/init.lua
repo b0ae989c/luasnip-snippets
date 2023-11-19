@@ -14,3 +14,4 @@ function M.load(option)
 end
 
 return M
+-- vi: set noexpandtab:

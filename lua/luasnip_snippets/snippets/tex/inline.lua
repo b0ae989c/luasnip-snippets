@@ -68,3 +68,4 @@ if require('luasnip_snippets.config').option.tex.inline then
 else
 	return snippets, autosnippets
 end
+-- vi: set noexpandtab:

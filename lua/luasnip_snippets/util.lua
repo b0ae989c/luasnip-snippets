@@ -18,3 +18,4 @@ function M.check_tex_environment(names)
 end
 
 return M
+-- vi: set noexpandtab:
