@@ -1,6 +1,10 @@
 local snippets = {
 	s(
-		{ trig = 'eqn', name = 'equation', dscr = '' },
+		{
+			trig = 'eqn',
+			name = 'equation',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{equation}
@@ -11,7 +15,11 @@ local snippets = {
 		)
 	),
 	s(
-		{ trig = 'subeqn', name = 'subequations', dscr = '' },
+		{
+			trig = 'subeqn',
+			name = 'subequations',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{subequations}
@@ -24,7 +32,11 @@ local snippets = {
 		)
 	),
 	s(
-		{ trig = 'ali', name = 'align', dscr = '' },
+		{
+			trig = 'ali',
+			name = 'align',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{aligned}

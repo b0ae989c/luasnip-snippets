@@ -2,7 +2,11 @@ local util = require('luasnip_snippets.util')
 
 local snippets = {
 	s(
-		{ trig = 'list', name = 'itemize', dscr = '' },
+		{
+			trig = 'list',
+			name = 'itemize',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{itemize}
@@ -13,7 +17,11 @@ local snippets = {
 		)
 	),
 	s(
-		{ trig = 'enum', name = 'enumerate', dscr = '' },
+		{
+			trig = 'enum',
+			name = 'enumerate',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{enumerate}
@@ -24,7 +32,11 @@ local snippets = {
 		)
 	),
 	s(
-		{ trig = 'outline', name = 'outline', dscr = '' },
+		{
+			trig = 'outline',
+			name = 'outline',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{outline}[enumerate]

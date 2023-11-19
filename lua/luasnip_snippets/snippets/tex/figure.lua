@@ -1,6 +1,10 @@
 local snippets = {
 	s(
-		{ trig = 'fig', name = 'figure', dscr = '' },
+		{
+			trig = 'fig',
+			name = 'figure',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{figure}[<1>]
@@ -14,7 +18,11 @@ local snippets = {
 		)
 	),
 	s(
-		{ trig = 'subfig', name = 'subfigure', dscr = '' },
+		{
+			trig = 'subfig',
+			name = 'subfigure',
+			dscr = '',
+		},
 		fmta(
 			[[
 			\begin{subfigure}[b]{<1>\textwidth}
