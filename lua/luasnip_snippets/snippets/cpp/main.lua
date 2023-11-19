@@ -3,8 +3,7 @@ local snippets = {
 		{ trig = 'main', name = 'main', dscr = '' },
 		fmta(
 			[[
-			int
-			main(int, char**) {
+			auto main(int, char**) -> int {
 				<1>
 				return 0;
 			}
