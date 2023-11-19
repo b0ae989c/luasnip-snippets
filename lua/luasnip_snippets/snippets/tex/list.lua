@@ -24,6 +24,15 @@ local snippets = {
 		)
 	),
 	s(
+		{ trig = 'outline', name = 'outline', dscr = '' },
+		fmta(
+			[[
+			\begin{outline}[enumerate]
+				\1 <1>
+			\end{outline}
+			]],
+			{ i(1, '') }
+		)
 	),
 	s({
 		trig = 'i',
