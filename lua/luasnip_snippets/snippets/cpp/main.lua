@@ -7,7 +7,7 @@ local snippets = {
 		},
 		fmta(
 			[[
-			auto main(int, char**) -> int {
+			auto main(int, char**) ->> int {
 				<1>
 				return 0;
 			}
