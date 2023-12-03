@@ -10,7 +10,6 @@ With ``lazy.nvim``:
 
    {
      'L3MON4D3/LuaSnip',
-     event = 'BufReadPre',
      dependencies = {
        'https://gitlab.com/b0ae989c/luasnip-snippets.git',
      },
