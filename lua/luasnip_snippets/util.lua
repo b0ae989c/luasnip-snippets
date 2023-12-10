@@ -1,7 +1,8 @@
 local M = {}
 
 function M.check_context(key_1, key_2, key_3)
-	local location = vim.fn.searchpairpos(key_1, key_2, key_3, 'bnW', '', 0, 100)
+	local location =
+		vim.fn.searchpairpos(key_1, key_2, key_3, 'bnW', '', 0, 100)
 
 	return (location[1] > 0) and (location[2] > 0)
 end
